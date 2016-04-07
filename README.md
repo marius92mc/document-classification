@@ -6,8 +6,9 @@ Classificate documents on categories
 Please see requirements.txt.
 <br />
 To install these packages, use
-<br />
+```bash
 $ pip install -r requirements.txt
+```
 
 ### Training data
 Based on Reuters-21578 files.
@@ -17,24 +18,29 @@ Available in sgm format on
 classification/data/ 
 ```
 Trained data's topics can be found in
-<br />
+```bash
 classification/data/all-topics-strings.lc.txt
+```
 
 ### Train 
+```bash
 $ python train_and_classify_reuters_data.py 
+```
 
 ### Classify 
+```bash
 $ python test_classifier.py 
-<br />
+```
     Will predict the topic for the articles from 
-<br />
+```bash
 classification/data/reuters_test_json/reuters_test1.json 
-<br />
+```
     If all the json testing articles are provided with 
 the specific topics field, it will show the 
 <b> Hit-rate score </b> and the <b> Confusion matrix </b>. 
 
 ### Example
+```bash
 $ python train_and_classify_reuters_data 
-<br />
 $ python test_classifier.py
+```
