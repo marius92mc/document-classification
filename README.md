@@ -21,7 +21,8 @@ Trained data's topics can be found in
 ```bash
 classification/data/all-topics-strings.lc.txt
 ```
-
+To train/test, run the following scripts 
+from classification/
 ### Train 
 ```bash
 $ python train_and_classify_reuters_data.py 
