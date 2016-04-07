@@ -13,9 +13,9 @@ $ pip install -r requirements.txt
 Based on Reuters-21578 files.
 <br />
 Available in sgm format on 
-<br />
+```bash
 classification/data/ 
-<br />
+```
 Trained data's topics can be found in
 <br />
 classification/data/all-topics-strings.lc.txt
