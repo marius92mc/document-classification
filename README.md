@@ -40,7 +40,7 @@ If all the <i>json</i> testing articles are provided with
 the specific topics field mentioned, 
 <br />
 it will show the 
-<b> Hit-rate score </b> and the <b> Confusion matrix </b>. 
+<b> [Hit-rate score](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC.score) </b> and the <b> [Confusion matrix](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) </b>. 
 
 ### Example
 ```bash
