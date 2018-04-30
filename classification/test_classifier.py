@@ -58,6 +58,17 @@ def test_data_from_json_file():
     print "\nTotal runtime %.2f seconds." % (time.time() - start_time)
 
 
+def _get_topics_occurences(topics):
+    hash_table = {}
+    for topic in topics:
+        if topic not in hash_table:
+            hash_table[topic] = 1
+        else:
+            hash_table[topic] += 1
+
+    return hash_table
+
+
 def get_all_topics_from_trained_json_data():
     all_topics = []
     
@@ -68,20 +79,11 @@ def get_all_topics_from_trained_json_data():
             if "topics" in json_entry:
                 for topic in json_entry["topics"]:
                     all_topics.append(topic)
-    
-    hash_table = {}
-    for topic in all_topics:
-        if topic not in hash_table:
-            hash_table[topic] = 1
-        else:
-            hash_table[topic] += 1
-            
-    for key in hash_table:
-        print key, hash_table[key]
+
+    for key, value in _get_topics_occurences(all_topics).items():
+        print key, value
         
 
-
-    
 test_data_from_json_file()
 
 #get_all_topics_from_trained_json_data()
